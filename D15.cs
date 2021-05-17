@@ -32,12 +32,14 @@ namespace D15
 			Dictionary<int, List<int>> numbers = new Dictionary<int, List<int>>();
 			int number = -1;
 			
+			//input to dictionary
 			for (int i = 0; i < input.Count; i++)
 			{
 				number = input[i];
 				UpdateDictionary(numbers, number, i);
 			}
 			
+			//play game
 			for (int i = input.Count; i < n; i++)
 			{
 				if (numbers[number].Count == 1)
